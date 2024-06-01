@@ -17,8 +17,7 @@ public class Testimoni {
     public String text;
 
     public Testimoni(String text) {
-//        this.id = id;
-//        this.idUser = idUser;
+
         this.text = text;
     }
 
@@ -45,21 +44,6 @@ public class Testimoni {
     public void setText(String text) {
         this.text = text;
     }
-//    public String getId() {
-//        return id;
-//    }
-//
-//    public void setId(String id) {
-//        this.id = id;
-//    }
-//
-//    public String getIdUser() {
-//        return idUser;
-//    }
-//
-//    public void setIdUser(String idUser) {
-//        this.idUser = idUser;
-//    }
 
 
     public static ArrayList<Testimoni> getAll() {
@@ -73,8 +57,7 @@ public class Testimoni {
 
             while (resultSet.next()) {
                 Testimoni testimoni = new Testimoni(
-//                        resultSet.getString("id"),
-//                        resultSet.getString("id_user"),
+
                         resultSet.getString("text")
                 );
 
